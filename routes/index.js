@@ -14,4 +14,5 @@ router.get('/index', function(req, res) {
 });
 router.get('/comando',clientScktController.question);
 router.get('/answer',clientScktController.answer);
+router.get('/answer/android',clientScktController.answer_android);
 module.exports = router;

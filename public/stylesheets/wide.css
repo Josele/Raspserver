@@ -1,0 +1,9 @@
+body { background: #666; }
+#page-wrap { width: 900px; position: relative; }
+#page-wrap:after { content: "Medium Layout"; }
+a {
+  color: #00B7FF;
+}
+input[type="text"] {
+    width: 300px;
+}

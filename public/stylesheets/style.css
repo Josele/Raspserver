@@ -1,8 +1,60 @@
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 600px)
+  and (-webkit-min-device-pixel-ratio: 2) {
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: black;
 }
 
 a {
   color: #00B7FF;
+}
+#page-wrap { width: 548px; }
+#page-wrap:after { content: "Narrow Layout"; }
+
+input[type="text"] {
+    width: 200px;
+}
+
+
+
+}
+
+
+@media screen 
+  and (device-width: 601px) 
+  and (device-height: 906px) 
+  and (-webkit-min-device-pixel-ratio: 1.331) 
+  and (-webkit-max-device-pixel-ratio: 1.332) {
+  GNU nano 2.2.6                             File: public/stylesheets/wide.css                                                                  
+
+body { background: #666; }
+#page-wrap { width: 900px; position: relative; }
+#page-wrap:after { content: "Medium Layout"; }
+a {
+  color: #00B7FF;
+}
+input[type="text"] {
+    width: 300px;
+}
+
+
+
+}
+@media screen 
+  and (min-device-width: 907px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+* { margin: 0; padding: 0; }
+body { font: 14px Georgia, serif; }
+#page-wrap { margin: 40px auto;  }
+#page-wrap > div { border: 1px solid #999; padding: 20px; margin-bottom: 5px; color: black; }
+#header { background: #eee; }
+h1{color:black;}
+
+
 }
