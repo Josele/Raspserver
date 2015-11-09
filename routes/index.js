@@ -8,7 +8,10 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'TrenesPi2' });
 
 });
+router.get('/index', function(req, res) {
+  res.render('index', { title: 'TrenesPi2' });
 
+});
 router.get('/comando',clientScktController.question);
 router.get('/answer',clientScktController.answer);
 module.exports = router;
