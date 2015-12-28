@@ -8,7 +8,6 @@ res.render('prtlsviews/commandview');
 };
 
 
-
 exports.answer=function(req,res){ // req will have the command from out
 
 
@@ -20,13 +19,15 @@ var client = new net.Socket();
 
 
 client.connect(45000, '127.0.0.1', function() {
-	console.log('S: Connected');
+	console.log('Server: Connected and send command');
 	client.write(str);
 	client.end(); // esto es importante, sino el servidor espera más datos
 	if(str=='quit')
             throw new Error('close de server after quit');
 });
-
+client.setTimeout(2000,function () {
+client.destroy();
+});
 client.on('error',function(e){
 	console.log(e);
 	client.end();
