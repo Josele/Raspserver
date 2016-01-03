@@ -66,7 +66,7 @@ var client = new net.Socket();
 
 
 
-client.connect(45000, '127.0.0.1', function() {
+client.connect({path: '/home/pi/LselRemasterizado/socket'}, function() {
         console.log('S: Connected');
         client.write(str);
         client.end(); // esto es importante, sino el servidor espera más datos
